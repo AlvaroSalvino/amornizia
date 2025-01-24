@@ -1,0 +1,46 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'assets/css/presentes.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="container">
+
+    <div id="escolha">
+
+        <h1>Escolha:</h1>
+
+        <div id="cafe">
+
+            <a href="{% url 'carta' %}">
+                <p>Cartinha 💌</p>
+            </a>
+
+        </div>
+
+
+        <div id="fast">
+
+            <a href="{% url 'meu_coracao' %}">
+                <p>Meu coração ❤️</p>
+            </a>
+
+        </div>
+
+
+        <div id="cine">
+
+            <a href="{% url 'snape' %}">
+                <p>Snape 🧙‍♂️</p>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

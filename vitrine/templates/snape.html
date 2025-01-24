@@ -1,0 +1,26 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'assets/css/snape.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="container">
+
+    <div id="resgatado">
+
+        <h1>Snape 🗲 </h1>
+
+        <p>Um recado de severus snape para você</p>
+
+        <img src="{% static 'assets/img/th3.jpg' %}" alt="">
+        <button class="back-button" onclick="window.history.back();">Voltar</button>
+
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

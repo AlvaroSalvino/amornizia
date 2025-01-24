@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'assets/css/carta.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="env"></div>
+    <img src="{% static 'assets/img/heart.png' %}" alt="">
+    <div class="lettre">
+        <div>
+            Espero que, de alguma forma, meu carinho chegue até você e te faça sorrir! &#128152;<br><br>
+        </div>
+    </div>
+    <div class="front"></div>
+    <button class="back-button" onclick="window.history.back();">Voltar</button>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

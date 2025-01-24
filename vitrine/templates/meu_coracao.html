@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'assets/css/meu_coracao.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="heart"></div>
+<h1>Estarei por perto, sempre que precisar </h1>
+<button class="back-button" onclick="window.history.back();">Voltar</button>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="container">
+
+    <div id="texto">
+
+        <h1>Para uma pessoa muito especial ..... &#128151</h1>
+
+        <p>Eu me peguei pensando em você, nas coisas que gostaria de dizer, mas ainda não encontrei as palavras
+            certas...
+            </strong></p>
+
+        <p>Estamos apenas começando a nos conhecer, e cada dia traz novas lições. Tenho muito a aprender, e fico grato
+            por poder fazer isso ao seu lado, de forma leve e sem pressa.</p>
+
+        <p>Não sou poeta, mas sou o Alvaro Salvino, alguém que tem um grande apreço por você. Com você, estou
+            vivenciando um sentimento genuíno, algo que me faz refletir sobre a beleza da simplicidade das coisas boas
+            que a vida nos oferece.</p>
+
+        <a href="{% url 'presentes' %}">Clique aqui para resgatar seus presentes</a>
+
+        <p>Obs: Se não eu, quem vai fazer você sorrir? &#128156</p>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

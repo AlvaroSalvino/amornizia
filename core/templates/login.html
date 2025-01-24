@@ -1,0 +1,44 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'assets/css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-login">
+
+    <div class="login">
+
+        <div id="profile">
+            <img src="{% static 'assets/img/artzinha.jpeg' %}" alt="minha imagem">
+
+            <h1>Você está frequentemente<br>nos meus pensamentos &#128156 </h1>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <p id="sucesso">Sucesso !</p>
+
+            <p id="preencha">Preencha todos os campos !</p>
+
+            <p id="negado">Acesso negado !</p>
+
+            <input required type="text" placeholder="Nome de Usuário" autofocus class="usuario" name="usuario">
+
+            <input required type="password" placeholder="Senha" class="senha" name="senha">
+
+            <button type="submit">ENTRAR</button>
+
+        </form>
+        <p>Ainda não tem uma conta?
+        <a href="criar conta/index.html">Crie aqui &#128683 </a>
+    </p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static  'assets/js/main.js' %}"></script>
+{% endblock %}
