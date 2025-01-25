@@ -1,0 +1,16 @@
+1. feed {
+    Inserir (Foto, Vídeo, Descrição, Filtro para fotos e vídeos, compartilhar com redes sociais, editor para inserção de música em foto/vídeo)
+}
+
+2. Lista {
+    Inserir dois tipos de lista:
+        1 - Lista dinâmica (Onde os dois podem editar a lista);
+        2 - Lista privada;
+}
+
+3. Calendário {
+    Dois calendários:
+        1 - Ciclo menstral;
+        2 - Lembretes e datas especiais;
+}
+
